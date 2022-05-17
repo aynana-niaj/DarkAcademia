@@ -1,0 +1,182 @@
+:root{
+   
+    --ff-text: "CormorantGaramond-Regular";
+    /* --ff-heading: "darkAcademia"; */
+    --ff-sub: "AllamatheraSouth";
+}
+
+
+@font-face {
+    font-family: 'AllamatheraSouth';
+    src: url(fonts/AllmatheraSouth-YzPZv.ttf);
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Calibri';
+    background-color: rgba(55, 13, 13, 0.831);
+}
+
+.header{
+    background-image: url(assets/about\ us.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+}
+
+.content{
+    background-color: brown;
+    /* width: fit-content; */
+    /* position: absolute; */
+    background-position:0px 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 125px;
+    margin: auto;
+    /* border: 1px solid white; */
+    
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;   
+}
+
+.nav-links ul li a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.main_heading{
+    font-family: 'Calibri'; 
+    font-size: 2.5rem;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: fit-content;
+}
+
+.heading_1{
+    text-align: center;
+    color: white;
+    font-family: "CormorantGaramond-Bold";
+    padding-top: 3rem;
+    font-size: 1.8rem;
+}
+
+.para_1{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Calibri';font-style: italic;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width: 60%;
+    padding: 1rem;
+}
+.para_2{
+
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-family: 'Calibri';
+        margin: auto;
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+        width: 50%;
+        padding: 1rem;
+}
+
+.heading_2{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: var(--ff-text);
+    padding-top: 0.1rem;
+    
+}
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #4e160f;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 2;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+}
